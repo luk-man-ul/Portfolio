@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         document.documentElement.classList.remove('dark')
       }
     } else {
-      // Default to dark mode (dark-first design)
+      // Default to dark mode (dark-first design).
       const initialTheme = 'dark'
       setTheme(initialTheme)
       document.documentElement.classList.add('dark')

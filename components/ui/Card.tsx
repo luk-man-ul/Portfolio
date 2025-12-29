@@ -14,7 +14,7 @@ export function Card({ children, className, hover = false, glass = false, floati
   let baseClasses = ''
   
   if (floating) {
-    // Floating container style with glassmorphism and shadow
+    // Floating container style with glassmorphism and shadow.
     baseClasses = 'rounded-3xl p-8 bg-gray-800/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 shadow-2xl transition-all duration-300'
   } else if (glass) {
     baseClasses = 'rounded-2xl p-6 glass transition-all duration-300'

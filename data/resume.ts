@@ -69,18 +69,6 @@ export const resume: ResumeData = {
     },
     {
       id: '2',
-      title: 'Intern Full Stack Developer',
-      company: 'Zephyr Technologies Pvt Ltd',
-      location: 'Mangalore, Karnataka',
-      period: '2023 - 2024',
-      description: [
-        'Supported in development of multiple web applications using React, Next.js, and Node.js for the client',
-        'Mentored college students and conducted code reviews',
-        'Improved application performance through optimization and best practices',
-      ],
-    },
-    {
-      id: '3',
       title: 'MCA Project',
       company: 'SmartBin',
       location: 'kannur, Kerala',
@@ -90,6 +78,31 @@ export const resume: ResumeData = {
         'Developed the whole web application and implemented RESTful APIs and database schemas',
         'Worked with modern JavaScript frameworks and libraries',
         'Participated in agile development processes',
+      ],
+    },
+    {
+      id: '3',
+      title: 'Intern Full Stack Developer',
+      company: 'Zephyr Technologies Pvt Ltd',
+      location: 'Mangalore, Karnataka',
+      period: '2024',
+      description: [
+        'Supported in development of multiple web applications using React, Next.js, and Node.js for the client',
+        'Mentored college students and conducted code reviews',
+        'Improved application performance through optimization and best practices',
+      ],
+    },
+    {
+      id: '4',
+      title: 'BCA Project',
+      company: 'Gym Management System',
+      location: 'Mangalore ,Karnataka',
+      period: '2022 - 2023',
+      description: [
+        'Developed a web-based Gym Management System to handle membership registration, renewals, and subscription tracking.',
+        'Implemented admin dashboards for managing members, gym services, and personalized product offerings.',
+        'Integrated authentication and role-based access for secure admin and user management.',
+        'Followed agile development practices, including iterative development and feature-based enhancements.',
       ],
     },
     

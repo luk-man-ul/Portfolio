@@ -14,26 +14,26 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce platform with cart functionality, payment integration, and admin dashboard.',
+    title: 'SmartBin',
+    description: 'IoT + AI powered smart bin that detects plastic bottle disposal and incentivizes users through a secure web platform.',
     category: 'Web App',
     image: '/project-1.jpg',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Stripe'],
+    technologies: ['React', 'Node.js', 'Python', 'C','MongoDB'],
     links: {
-      live: 'https://example.com',
-      github: 'https://github.com/example',
+      live: 'smartbin-project.netlify.app',
+      github: 'https://github.com/luk-man-ul/SmartBin_frontend',
     },
   },
   {
     id: '2',
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates and team collaboration features.',
+    title: 'Gym Management System',
+    description: 'A web-based system for managing gym members, trainers, fees, and attendance.',
     category: 'Web App',
     image: '/project-2.jpg',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Php','MySQL'],
     links: {
-      live: 'https://example.com',
-      github: 'https://github.com/example',
+      live: '',
+      github: '',
     },
   },
   {
@@ -44,20 +44,8 @@ export const projects: Project[] = [
     image: '/project-3.jpg',
     technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     links: {
-      live: 'https://example.com',
-      github: 'https://github.com/example',
-    },
-  },
-  {
-    id: '4',
-    title: 'Weather Dashboard',
-    description: 'Real-time weather dashboard with location-based forecasts and interactive maps.',
-    category: 'Web App',
-    image: '/project-4.jpg',
-    technologies: ['React', 'OpenWeather API', 'Chart.js'],
-    links: {
-      live: 'https://example.com',
-      github: 'https://github.com/example',
+      live: '',
+      github: 'https://github.com/luk-man-ul/Portfolio',
     },
   },
 ]

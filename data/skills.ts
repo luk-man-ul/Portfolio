@@ -22,18 +22,27 @@ export const skills: SkillCategory[] = [
   {
     name: 'Backend',
     skills: [
-      { name: 'Node.js', level: 85, category: 'Backend' },
-      { name: 'Python', level: 80, category: 'Backend' },
+      { name: 'Node.js', level: 90, category: 'Backend' },
+      { name: 'Python', level: 90, category: 'Backend' },
       { name: 'PostgreSQL', level: 75, category: 'Backend' },
-      { name: 'MongoDB', level: 70, category: 'Backend' },
+      { name: 'MongoDB', level: 85, category: 'Backend' },
+    ],
+  },
+  {
+    name: 'Data Engineering',
+    skills: [
+      { name: 'Azure fabrics', level: 85, category: 'Backend' },
+      { name: 'Python', level: 90, category: 'Backend' },
+      { name: 'Data modeling', level: 75, category: 'Backend' },
+      { name: 'Pipelines', level: 70, category: 'Backend' },
     ],
   },
   {
     name: 'Tools',
     skills: [
-      { name: 'Git', level: 90, category: 'Tools' },
-      { name: 'Docker', level: 75, category: 'Tools' },
-      { name: 'AWS', level: 70, category: 'Tools' },
+      { name: 'Git|GitHub', level: 99, category: 'Tools' },
+      { name: 'Cursor Ai', level: 85, category: 'Tools' },
+      { name: 'DataBricks', level: 70, category: 'Tools' },
     ],
   },
 ]

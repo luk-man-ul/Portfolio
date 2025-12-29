@@ -20,27 +20,27 @@ export interface AboutData {
 }
 
 export const about: AboutData = {
-  intro: 'I am a passionate full-stack developer with experience building scalable web applications. I specialize in modern JavaScript frameworks and love creating intuitive user experiences.',
+  intro: 'I am a passionate full-stack developer with experience building scalable web applications and an aspiring data engineer. I specialize in modern JavaScript frameworks and love solving data driven solutions.',
   whatIDo: [
     {
-      title: 'Web Development',
+      title: 'Full Stack Web Development',
       description: 'Building responsive and performant web applications using modern frameworks and best practices.',
       icon: 'code',
     },
     {
-      title: 'Data Engineering',
-      description: 'Creating beautiful and intuitive user interfaces that provide exceptional user experiences.',
+      title: 'Frontend Development',
+      description: 'Building beautiful and intuitive user interfaces that provide exceptional user experiences.',
       icon: 'palette',
     },
+    {
+      title: 'Data Engineering',
+      description: 'Building scalable and efficient data pipelines and architectures to collect, process, and analyze data.',
+      icon: 'database',
+    }, 
     {
       title: 'Backend Development',
       description: 'Designing and implementing robust server-side solutions and RESTful APIs.',
       icon: 'server',
-    },
-    {
-      title: 'Data Analytics',
-      description: 'Helping businesses improve their digital presence and solve complex technical challenges.',
-      icon: 'lightbulb',
     },
   ],
   testimonials: [

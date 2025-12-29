@@ -45,17 +45,17 @@ export function ProgressBar({
     <div ref={ref} className={cn('w-full', className)}>
       {label && (
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-medium text-gray-900 dark:text-gray-50">
+          <span className="text-sm font-medium text-gray-50">
             {label}
           </span>
           {showValue && (
-            <span className="text-sm text-gray-600 dark:text-gray-400">
+            <span className="text-sm text-gray-400">
               {value}%
             </span>
           )}
         </div>
       )}
-      <div className="h-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+      <div className="h-2 bg-gray-700/50 dark:bg-gray-700/50 rounded-full overflow-hidden">
         <motion.div
           className="h-full bg-accent-500 rounded-full"
           initial={{ width: 0 }}

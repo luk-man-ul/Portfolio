@@ -17,10 +17,10 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: 'Lukumanul Hakim',
-  title: 'Full Stack Developer',
+  name: 'S P Lukumanul Hakeem',
+  title: 'Full Stack web Developer & Aspiring data engineer',
   avatar: '/avatar.jpg',
-  bio: 'Passionate developer with expertise in modern web technologies. Building amazing digital experiences one line of code at a time.',
+  bio: 'Building scalable web today, data-driven systems tomorrow.',
   contact: {
     email: 'lukumanul.haqim@gmail.com',
     phone: '+91 7306417315',
@@ -28,8 +28,8 @@ export const profile: Profile = {
   },
   social: {
     github: 'https://github.com/luk-man-ul',
-    linkedin: 'https://linkedin.com/in/johndoe',
-    twitter: 'https://twitter.com/johndoe',
-    website: 'https://johndoe.dev',
+    linkedin: 'https://www.linkedin.com/in/lukumanul-hakeem-1067883a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    twitter: '',
+    website: '',
   },
 }

@@ -22,7 +22,7 @@ const tabs = [
 
 export function SidebarDesktop({ activeTab, onTabChange }: SidebarDesktopProps) {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:w-80 lg:fixed lg:inset-y-0 lg:left-0 lg:p-6 lg:border-r border-gray-200 dark:border-gray-800">
+    <aside className="hidden lg:flex lg:flex-col lg:w-80 lg:fixed lg:inset-y-0 lg:left-6 lg:p-6 lg:border-r border-gray-200 dark:border-gray-800">
       <Card className="flex flex-col h-full">
         <div className="flex flex-col items-center mb-6">
           <Avatar src={profile.avatar} alt={profile.name} size="lg" className="mb-4" />

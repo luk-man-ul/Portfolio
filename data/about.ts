@@ -24,7 +24,7 @@ export const about: AboutData = {
   whatIDo: [
     {
       title: 'Full Stack Web Development',
-      description: 'Building responsive and performant web applications using modern frameworks and best practices.',
+      description: 'Building responsive, performant web applications using modern frameworks and best practices.',
       icon: 'code',
     },
     {
@@ -34,7 +34,7 @@ export const about: AboutData = {
     },
     {
       title: 'Data Engineering',
-      description: 'Building scalable and efficient data pipelines and architectures to collect, process, and analyze data.',
+      description: 'Building scalable, efficient data pipelines & architectures to collect, process, & analyze data.',
       icon: 'database',
     }, 
     {
@@ -44,13 +44,6 @@ export const about: AboutData = {
     },
   ],
   testimonials: [
-    {
-      name: 'Mukesh',
-      role: 'chairman',
-      company: 'Reliance Industries',
-      content: 'lukman delivered exceptional work on our project. His attention to detail and technical expertise exceeded our expectations.',
-      avatar: '/testimonial-1.jpg',
-    },
     {
       name: 'Sundar',
       role: 'CEO',
@@ -64,6 +57,13 @@ export const about: AboutData = {
       company: 'International Business Machines',
       content: 'lukman\'s technical skills combined with his understanding of design make him an invaluable team member.',
       avatar: '/testimonial-3.jpg',
+    },
+    {
+      name: 'Mukesh',
+      role: 'chairman',
+      company: 'Reliance Industries',
+      content: 'lukman delivered exceptional work on our project. His attention to detail and technical expertise exceeded our expectations.',
+      avatar: '/testimonial-1.jpg',
     },
   ],
   clientLogos: [

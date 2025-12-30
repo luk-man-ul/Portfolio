@@ -35,7 +35,7 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <SidebarDesktop activeTab={activeTab} onTabChange={handleTabChange} />
 
-      <div className="lg:pl-80">
+      <div className="lg:pl-[22rem] lg:pr-6">
         <TopNav activeTab={activeTab} onTabChange={handleTabChange} />
 
         <main className="p-4 lg:p-8">

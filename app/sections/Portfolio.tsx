@@ -38,7 +38,10 @@ export function Portfolio() {
       variants={containerVariants}
       className="space-y-8"
     >
-      <SectionHeader title="Portfolio" />
+      <motion.div variants={itemVariants}>
+      <Card floating>
+        <div className="space-y-12">
+                <SectionHeader title="Portfolio" />
 
       <motion.div variants={itemVariants}>
         <div className="flex flex-wrap gap-3 mb-8">
@@ -128,6 +131,9 @@ export function Portfolio() {
           </Card>
         </motion.div>
       )}
+       </div>
+      </Card>
+    </motion.div>
     </motion.div>
   )
 }

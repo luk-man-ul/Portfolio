@@ -13,13 +13,27 @@ export function SidebarMobile() {
 
   return (
     <div className="lg:hidden mb-6">
-      <Card>
-        <div className="flex flex-col items-center">
-          <Avatar src={profile.avatar} alt={profile.name} size="lg" className="mb-4" />
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-1">
-            {profile.name}
-          </h1>
-          <p className="text-accent-500 text-sm mb-4">{profile.title}</p>
+      <Card className="realtive">
+        <div
+  className={`flex w-full ${
+    showContacts
+      ? 'flex-col items-center text-center'
+      : 'flex-row items-center gap-4 text-left'
+  }`}>
+          <Avatar
+  src={profile.avatar}
+  alt={profile.name}
+  size="lg"
+  className={showContacts ? 'mb-4 mx-auto' : 'shrink-0'}
+/>
+          <div className={showContacts ? '' : 'flex-1'}>
+  <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-1">
+    {profile.name}
+  </h1>
+  <p className="text-accent-500 text-sm">
+    {profile.title}
+  </p>
+</div>
 
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 text-center">
             {profile.bio}
@@ -28,19 +42,25 @@ export function SidebarMobile() {
           <Button
             variant="outline"
             onClick={() => setShowContacts(!showContacts)}
-            className="flex items-center md:absolute md:top-120 md:right-8 border-accent-300/50 hover:border-accent-500 text-gray-300 bg-gray-700/30 hover:bg-gray-700/50"
+            className="absolute top-20 right-6 flex items-center
+  border-accent-300/50 hover:border-accent-500
+  text-gray-300 bg-gray-700/30 hover:bg-gray-700/50"
+
           >
             {showContacts ? (
-              <>
-                
-                Hide Contacts <ChevronUp className="w-4 h-4 mr-2 ml-1" />
-              </>
-            ) : (
-              <>
-                
-                Show Contacts <ChevronDown className="w-4 h-4 mr-2 ml-1" /> 
-              </>
-            )}
+  <>
+    {/* Text shown on sm and up */}
+    <span className="hidden sm:inline">Hide Contacts</span>
+    <ChevronUp className="w-4 h-4 sm:ml-1" />
+  </>
+) : (
+  <>
+    {/* Text shown on sm and up */}
+    <span className="hidden sm:inline">Show Contacts</span>
+    <ChevronDown className="w-4 h-4 sm:ml-1" />
+  </>
+)}
+
           </Button>
 
           {showContacts && (

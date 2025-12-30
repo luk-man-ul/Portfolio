@@ -19,7 +19,7 @@ export function Badge({
   const baseClasses = 'inline-flex items-center px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300'
   
   const variants = {
-    default: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-50',
+    default: 'bg-gray-700 dark:bg-gray-800 text-gray-900 dark:text-gray-50',
     accent: active
       ? 'bg-accent-500 text-white'
       : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-50 hover:bg-accent-500/20',

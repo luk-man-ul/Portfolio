@@ -36,7 +36,11 @@ export function About() {
       variants={containerVariants}
       className="space-y-8"
     >
-      <SectionHeader title="About Me" />
+      <motion.div variants={itemVariants}>
+      <Card floating>
+        <div className="space-y-12">
+
+      <SectionHeader title="About Me" className="mb-2" />
 
       <motion.div variants={itemVariants}>
         <Card>
@@ -80,7 +84,7 @@ export function About() {
 
       <motion.div variants={itemVariants}>
         <SectionHeader title="Testimonials" />
-        <div className="overflow-x-auto pb-4 -mx-4 px-4">
+        <div className="overflow-x-auto no-scrollbar pb-4 -mx-4 px-4">
           <div className="flex space-x-6 min-w-max">
             {about.testimonials.map((testimonial, index) => (
               <motion.div
@@ -125,6 +129,9 @@ export function About() {
           ))}
         </div>
       </motion.div>
+       </div>
+      </Card>
+    </motion.div>
     </motion.div>
   )
 }

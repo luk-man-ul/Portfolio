@@ -29,6 +29,9 @@ export function Contact() {
       variants={containerVariants}
       className="space-y-8"
     >
+      <motion.div variants={itemVariants}>
+      <Card floating>
+        <div className="space-y-12">
       <SectionHeader title="Contact Me" description="Get in touch" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -108,6 +111,9 @@ export function Contact() {
           </Card>
         </motion.div>
       </div>
+       </div>
+      </Card>
+    </motion.div>
     </motion.div>
   )
 }

@@ -15,8 +15,8 @@ export function SectionHeader({
   children,
 }: SectionHeaderProps) {
   return (
-    <div className={cn('mb-8', className)}>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-2">
+    <div className={cn('mb-8 pb-4 border-b border-gray-300 dark:border-gray-700', className)}>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-1">
         {title}
       </h2>
       {description && (

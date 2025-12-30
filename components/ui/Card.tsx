@@ -14,12 +14,14 @@ export function Card({ children, className, hover = false, glass = false, floati
   let baseClasses = ''
   
   if (floating) {
-    // Floating container style with glassmorphism and shadow.
-    baseClasses = 'rounded-3xl p-8 bg-gray-800/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-700/50 dark:border-gray-700/50 shadow-2xl transition-all duration-300'
-  } else if (glass) {
+  baseClasses =
+    baseClasses =
+  'rounded-3xl p-8 bg-white/90 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/40 shadow-xl transition-all duration-300'
+}else if (glass) {
     baseClasses = 'rounded-2xl p-6 glass transition-all duration-300'
   } else {
-    baseClasses = 'rounded-2xl p-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 transition-all duration-300'
+    baseClasses =
+  'rounded-2xl p-6 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 transition-all duration-300'
   }
   
   const hoverClasses = hover ? 'hover:scale-[1.02] hover:shadow-xl cursor-pointer' : ''

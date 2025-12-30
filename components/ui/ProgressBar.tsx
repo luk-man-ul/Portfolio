@@ -45,11 +45,11 @@ export function ProgressBar({
     <div ref={ref} className={cn('w-full', className)}>
       {label && (
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-medium text-gray-50">
+          <span className="text-sm font-medium text-gray-700 dark:text-gray-200">
             {label}
           </span>
           {showValue && (
-            <span className="text-sm text-gray-400">
+            <span className="text-sm text-gray-600 dark:text-gray-400">
               {value}%
             </span>
           )}

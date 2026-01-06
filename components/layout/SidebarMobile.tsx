@@ -35,10 +35,6 @@ export function SidebarMobile() {
   </p>
 </div>
 
-          <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 text-center">
-            {profile.bio}
-          </p>
-
           <Button
             variant="outline"
             onClick={() => setShowContacts(!showContacts)}
@@ -65,6 +61,9 @@ export function SidebarMobile() {
 
           {showContacts && (
             <div className="w-full space-y-4 pt-4 border-t border-gray-200 dark:border-gray-800">
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 text-center">
+            {profile.bio}
+          </p>
               <div className="space-y-2 text-sm">
                 {profile.contact.email && (
                   <div className="flex items-center text-gray-600 dark:text-gray-400">

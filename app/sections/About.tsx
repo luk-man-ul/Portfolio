@@ -117,18 +117,40 @@ export function About() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <SectionHeader title="Clients" />
-        <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-          {about.clientLogos.map((logo, index) => (
-            <div
-              key={index}
-              className="w-24 h-24 bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center"
-            >
-              <span className="text-gray-600 dark:text-gray-400 text-xs">Logo</span>
-            </div>
-          ))}
+  <SectionHeader title="Clients" />
+
+  <div className="overflow-x-auto no-scrollbar pb-4 -mx-4 px-4">
+    <div
+      className="
+        flex items-center
+        justify-between
+        gap-8
+        min-w-full
+        opacity-60
+      "
+    >
+      {about.clientLogos.map((logo, index) => (
+        <div
+          key={index}
+          className="
+            flex-shrink-0
+            w-24 h-24
+            bg-gray-200 dark:bg-gray-800
+            rounded-lg
+            flex items-center justify-center
+          "
+        >
+          <span className="text-gray-600 dark:text-gray-400 text-xs">
+            Logo
+          </span>
         </div>
-      </motion.div>
+      ))}
+    </div>
+  </div>
+</motion.div>
+
+
+
        </div>
       </Card>
     </motion.div>

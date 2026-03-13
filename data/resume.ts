@@ -63,7 +63,8 @@ export const resume: ResumeData = {
       period: '2026 - present',
       description: [
         'Updatinging and maintaining the kannur university website',
-        'Working on the next.js,tailwind css,type script,node.js,mongodb,express.js',
+        'Developed and maintaining the company internal tool (project/employee management tool like jira)',
+        'Working with Node.js, Next.js, Nest.js, React.js, Tailwind CSS, TypeScript, mongodb, express.js',
 
       ],
     },

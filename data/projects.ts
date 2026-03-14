@@ -48,6 +48,18 @@ export const projects: Project[] = [
       github: 'https://github.com/luk-man-ul/Portfolio',
     },
   },
+  {
+    id: '4',
+    title: 'Project management tool',
+    description: 'A project management tool like Jira for internal use in the company to manage projects and employees.',
+    category: 'Website',
+    image: '/project-4.jpg',
+    technologies: ['Nest.js', 'React.js', 'Tailwind CSS', 'TypeScript'],
+    links: {
+      live: '',
+      github: 'https://github.com/luk-man-ul/EPMS',
+    },
+  },
 ]
 
 export const projectCategories = ['All', ...Array.from(new Set(projects.map(p => p.category)))]

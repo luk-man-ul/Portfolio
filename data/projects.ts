@@ -50,8 +50,8 @@ export const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Project management tool',
-    description: 'A project management tool like Jira for internal use in the company to manage projects and employees.',
+    title: 'ERP System',
+    description: 'Developed an integrated system for employee management, project tracking, and financial operations with real-time reporting and cross-module workflows.',
     category: 'Website',
     image: '/project-4.jpg',
     technologies: ['Nest.js', 'React.js', 'Tailwind CSS', 'TypeScript'],

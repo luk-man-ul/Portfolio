@@ -129,22 +129,88 @@ export function About() {
         opacity-60
       "
     >
-      {about.clientLogos.map((logo, index) => (
-        <div
-          key={index}
-          className="
-            flex-shrink-0
-            w-24 h-24
-            bg-gray-200 dark:bg-gray-800
-            rounded-lg
-            flex items-center justify-center
-          "
-        >
-          <span className="text-gray-600 dark:text-gray-400 text-xs">
-            Logo
-          </span>
-        </div>
-      ))}
+      {about.clientLogos.map((logo, index) => {
+        // AltezzAI logo — first slot
+        if (index === 0) {
+          return (
+            <div
+              key={index}
+              className="
+                flex-shrink-0
+                w-24 h-24
+                bg-gray-200 dark:bg-gray-800
+                rounded-lg
+                flex items-center justify-center
+                overflow-hidden
+                p-2
+              "
+            >
+              <img
+                src="/altezzai-logo.png"
+                alt="AltezzAI"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          )
+        }
+
+        // Star Sports-inspired star symbol — second slot
+        if (index === 1) {
+          return (
+            <div
+              key={index}
+              className="
+                flex-shrink-0
+                w-24 h-24
+                bg-gray-200 dark:bg-gray-800
+                rounded-lg
+                flex items-center justify-center
+                overflow-hidden
+                p-2
+              "
+            >
+              {/* Star broadcast icon — no copyrighted wordmarks */}
+              <svg
+                viewBox="0 0 80 80"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-16 h-16"
+                aria-label="Star Sports brand icon"
+              >
+                {/* Outer glow ring */}
+                <circle cx="40" cy="40" r="36" fill="none" stroke="#e8b800" strokeWidth="2.5" opacity="0.4" />
+                {/* Five-pointed star */}
+                <polygon
+                  points="40,6 49.5,31.5 77,31.5 54.5,48 63,73.5 40,57 17,73.5 25.5,48 3,31.5 30.5,31.5"
+                  fill="#e8b800"
+                  stroke="#c99a00"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
+                {/* Inner highlight dot */}
+                <circle cx="40" cy="40" r="5" fill="#fff" opacity="0.55" />
+              </svg>
+            </div>
+          )
+        }
+
+        // Remaining placeholder slots — unchanged
+        return (
+          <div
+            key={index}
+            className="
+              flex-shrink-0
+              w-24 h-24
+              bg-gray-200 dark:bg-gray-800
+              rounded-lg
+              flex items-center justify-center
+            "
+          >
+            <span className="text-gray-600 dark:text-gray-400 text-xs">
+              Logo
+            </span>
+          </div>
+        )
+      })}
     </div>
   </div>
 </motion.div>

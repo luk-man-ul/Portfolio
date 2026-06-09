@@ -14,6 +14,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
+    title: 'Star',
+    description: 'A modern tailoring management platform for handling bookings, order tracking, and customer interactions.',
+    category: 'Progressive Web App',
+    image: '/project-1.jpg',
+    technologies: ['Next.js', 'Tailwind CSS', 'Supabase '],
+    links: {
+      live: 'smartbin-project.netlify.app',
+      github: 'https://github.com/luk-man-ul/SmartBin_frontend',
+    },
+  },
+  {
+    id: '2',
     title: 'SmartBin',
     description: 'IoT + AI powered smart bin that detects plastic bottle disposal and incentivizes users through a secure web platform.',
     category: 'Web App',
@@ -25,7 +37,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: '2',
+    id: '3',
     title: 'Gym Management System',
     description: 'A web-based system for managing gym members, trainers, fees, and attendance.',
     category: 'Web App',
@@ -37,7 +49,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: '3',
+    id: '4',
     title: 'Portfolio Website',
     description: 'A responsive portfolio website showcasing projects and skills with modern design.',
     category: 'Website',
@@ -49,7 +61,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: '4',
+    id: '5',
     title: 'ERP System',
     description: 'Developed an integrated system for employee management, project tracking, and financial operations with real-time reporting and cross-module workflows.',
     category: 'Website',

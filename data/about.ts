@@ -59,9 +59,9 @@ export const about: AboutData = {
       avatar: '/testimonial-3.jpg',
     },
     {
-      name: 'Mukesh',
-      role: 'chairman',
-      company: 'Reliance Industries',
+      name: 'Ishaq Mohammed',
+      role: 'CEO',
+      company: 'Altezzai Technologies',
       content: 'lukman delivered exceptional work on our project. His attention to detail and technical expertise exceeded our expectations.',
       avatar: '/testimonial-1.jpg',
     },

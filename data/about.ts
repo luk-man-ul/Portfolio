@@ -45,16 +45,16 @@ export const about: AboutData = {
   ],
   testimonials: [
     {
-      name: 'Sundar',
+      name: 'Ahmed Aslam',
       role: 'CEO',
-      company: 'Alphabet inc.',
+      company: 'Star Stitcher ',
       content: 'Working with lukman was a pleasure. He transformed our vision into reality with clean, maintainable code.',
       avatar: '/testimonial-2.jpg',
     },
     {
       name: 'Arvind',
-      role: 'Lead Executive',
-      company: 'International Business Machines',
+      role: 'Team Lead',
+      company: 'Zephyr Private Limited',
       content: 'lukman\'s technical skills combined with his understanding of design make him an invaluable team member.',
       avatar: '/testimonial-3.jpg',
     },
